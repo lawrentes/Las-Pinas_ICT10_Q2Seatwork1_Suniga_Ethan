@@ -1,0 +1,156 @@
+<!DOCTYPE DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+
+    <title>Quarter 2 Seatwork 1 - Xarian Aviation Club</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0A1128; 
+            background-image: url(images.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #E6D5C3;
+            font-family: 'Rajdhani', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        header {
+            background-color: #111F4D;
+            padding: 15px 40px;
+            border-bottom: 1px solid #D4B795; 
+        }
+
+        header h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #D4B795; 
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        
+        .hero-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        
+        .content {
+            background-color: #111F4D; 
+            border: 1px solid #D4B795;
+            border-radius: 4px; 
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        
+        .content h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .content p {
+            margin-bottom: 25px;
+            line-height: 1.5;
+            font-size: 1.1rem;
+        }
+
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            background-color: #0A1128;
+            border: 1px solid #D4B795;
+            border-radius: 2px;
+            color: #FFFFFF;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+        }
+
+        input[type="text"]::placeholder {
+            color: #8C7A6B; 
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #D4B795; 
+            color: #0A1128;
+            border: none;
+            border-radius: 2px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .small-bottom-card {
+    background-color: #0A1128; 
+    border: 1px dashed #D4B795; 
+    border-radius: 2px;
+    padding: 15px;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.small-bottom-card p {
+    font-size: 0.9rem; 
+    margin-bottom: 0;   
+    color: #E6D5C3;
+}
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h2>Xaria Corporations</h2>
+    </header>
+
+    <div class="hero-container">
+
+        <div class="content">
+            <h1>Xarian Aviation Club</h1>
+            <p>This club is to teach people and individuals the basics of air and space aviation, including physics, engineering, and team projects.</p>
+
+            <input type="text" id="fname" placeholder="Enter your first name.">
+            <input type="text" id="lname" placeholder="Enter your last name.">
+            <button py-click="candidate_checker">Check</button>
+        </div>
+<div class="small-bottom-card">
+                    <br>
+            
+            <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+            <hr>
+</div>
+
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
